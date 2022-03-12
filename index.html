@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="style.css">
+  <script src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+  <script src="script.js"></script>
+
+    <title>Cost Calculator</title>
+  </head>
+  <body>
+
+    <p><b>Cost Calculator</b></p> 
+	<div ng-app="CostApp" ng-init="qty='0';price='0'">
+  <p><span>Enter Quantity : </span><input type='number' placeholder='Enter Quantity' ng-model='qty'></p>
+  <p><span>Enter Price : </span><input type='number' placeholder='Enter Price' ng-model='price'></p>
+  <p><span>Your total is : <b>${{qty*price}}</b></span></p>
+  </body>
+</html>
